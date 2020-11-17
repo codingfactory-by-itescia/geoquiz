@@ -10,47 +10,37 @@
 
 <body>
 
-   <h1>Bienvenue Sur Notre Jeu Ludique GéoQuiz !</h1>
+    <h1>Bienvenue Sur Notre Jeu Ludique GéoQuiz !</h1>
 
     <form class="pseudo">
-        <p>
-            <label for="pseudo">ENTRER VOTRE PSEUDO</label> :
-            <input type="text" name="pseudo" id="pseudo" required
-            minlength="1" maxlength="20" size="20">
-        </p>       
-        <input type="submit" value="VALIDER">
-    </form> <br>
+        <div class="souspseudo">
+            <label for="pseudo">ENTREZ VOTRE PSEUDO :</label>
+            <input type="text" name="pseudo" id="pseudo" required minlength="1" maxlength="20">
+        </div>
 
-<h2>APPRENDS CETTE CARTE</h2> <br>
+        <div>
+            <input type="submit" value="VALIDER" class="btn">
+        </div>
+    </form>
 
-<img src="http://planetejeanjaures.free.fr/geo/europe/carte_europe.jpg" width=1000px height=1000px><br>
-<div class="boutton">
-    <button><a href="jeu.html">JOUER</a></button>
-</div>
-<div class="style">
-    <input id="regle" type="button" value="REGLE">
-</div>
- 
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-
- <div class="halloffame" id="demo">
-    <p>créé par</p>
-        <script>
-            document.getElementById("demo").addEventListener("click", myFunction);
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "SORY THOMAS CLAIRE MICKAEL ALPHA BRIAN";
-}
-        </script>
-</div>
+    <h2>Ici tu peux réviser les pays avant de jouer</h2>
+    
+    <div class="ctnPicAndBtn">
+        <img src="http://planetejeanjaures.free.fr/geo/europe/carte_europe.jpg" width=70%>
+        
+        <div class="ctnBtn">
+            <button class="btn" id="linkToGame">JOUER</button>
+            <input id="regle" class="btn" type="button" value="REGLES">
+        </div>
+    </div>
+    
+    <p class="halloffame" id="demo">créé par</p>
 
 
 
-    <script type="text/javascript" src="main.js"></script>
+
+
+    <script type="text/javascript" src="accueil.js"></script>
 </body>
+
 </html>
-
-
-
-
-
