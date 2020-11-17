@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
+    <title>GéoQuiz</title>
+</head>
+
+<body>
+
+   <h1>Bienvenue Sur Notre Jeu Ludique GéoQuiz !</h1>
+
+    <form class="pseudo">
+        <p>
+            <label for="pseudo">ENTRER VOTRE PSEUDO</label> :
+            <input type="text" name="pseudo" id="pseudo" required
+            minlength="1" maxlength="20" size="20">
+        </p>       
+        <input type="submit" value="VALIDER">
+    </form> <br>
+
+<h2>APPRENDS CETTE CARTE</h2> <br>
+
+<img src="http://planetejeanjaures.free.fr/geo/europe/carte_europe.jpg" width=1000px height=1000px><br>
+<div class="boutton">
+    <button><a href="jeu.html">JOUER</a></button>
+</div>
+<div class="style">
+    <input id="regle" type="button" value="REGLE">
+</div>
+ 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <div class="halloffame" id="demo">
+    <p>créé par</p>
+        <script>
+            document.getElementById("demo").addEventListener("click", myFunction);
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "SORY THOMAS CLAIRE MICKAEL ALPHA BRIAN";
+}
+        </script>
+</div>
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+
+
+
+

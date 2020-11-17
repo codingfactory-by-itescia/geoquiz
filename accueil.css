@@ -1,0 +1,166 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+}
+
+
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+
+html{
+    background-color:rgb(157, 205, 211);
+}
+
+
+.pseudo{
+    text-align: center;
+    border-width: 2px; 
+    border-style:solid;
+    border-color:black;
+    padding: 0px 10px;
+}
+
+.halloffame{
+    color: blueviolet;
+    position : absolute;
+    font-size: 20px;
+}
+
+
+img{
+    display:block;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 42%;
+    }
+    
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+
+.button:hover {
+    background-color: grey;
+    }
+
+.button:hover span {
+    padding-right: 25px;
+    }
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+
+.button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 42%;
+    }
+    
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+
+.button:hover {
+    background-color: grey;
+    }
+
+.button:hover span {
+    padding-right: 25px;
+    }
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+.style {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 42%;
+    }
+    
+.style span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+
+.style span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+
+.style:hover {
+    background-color: grey;
+    }
+
+.style:hover span {
+    padding-right: 25px;
+    }
+
+.style:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
