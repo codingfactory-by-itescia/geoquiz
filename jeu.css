@@ -32,7 +32,7 @@
   .bigCtn {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: flex-start;
   }
   
@@ -159,12 +159,15 @@
   }
   .rightRep {
     color: green;
+    font-weight: bold;
   }
   .wrongRep {
     color: red;
+    font-weight: bold;
   }
   #divBtnAndCountryANDanswers {
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
-    
+
   }
