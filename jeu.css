@@ -158,10 +158,12 @@
     border-radius: 50%;
   }
   .rightRep {
+    /* display: none; */
     color: green;
     font-weight: bold;
   }
   .wrongRep {
+    /* display: none; */
     color: red;
     font-weight: bold;
   }

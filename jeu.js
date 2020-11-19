@@ -51,12 +51,10 @@ let divBtnAndCountry = document.getElementById("divBtnAndCountry");
 let h3 = document.getElementsByTagName("h3")[0]
 
 let h1 = document.getElementsByTagName('h1')[0]
-console.log(h1);
 h1 = h1.innerHTML = "À toi de jouer, "+ localStorage.getItem('pseudo') +" !" ;//h1 = merci d'avoir joué !
-console.log(h1)
 
 
-let startingMinutes = 1.5; //definir le timer
+let startingMinutes = 1.5; //définir le timer
 let time = startingMinutes * 60; //le commencement du timer
 let countdownTime = document.getElementById("timer"); //prend l'element timer
 
@@ -192,7 +190,6 @@ azerbaidjan.addEventListener("click", isAnswerRight)
 
 let check = true;
 let noP = true ;
-let condition2 ;
 let randCountry;
 let score = 0;
 
@@ -210,7 +207,7 @@ titre.classList.toggle("ph1");
 }
 
 let divRightOrWrongAnswer = document.getElementById("rightOrWrongAnswer")
-//window.addEventListener("click", isAnswerRight)
+// window.addEventListener("click", isAnswerRight)
 let p = document.createElement("p")
 // let p2 = document.createElement("p")
 
@@ -224,12 +221,12 @@ function isAnswerRight (event) {
       console.log(score);
       console.log('réponse correcte, le score est égal à : '+score)
       localStorage.setItem('score', score)
-     
+      
      // Création d'un élément p et attribution d'une classe à cet élément
      // et je lui donne un contenu de texte
      // Je greffe ce paragraphe à ma div
      if (noP) {
-       console.log("je suis dans le if noP")
+       console.log("réponse juste + je suis dans le if noP")
       p.setAttribute('class', 'rightRep')
       p.textContent= "Pays trouvé!"
       divRightOrWrongAnswer.appendChild(p);
@@ -237,8 +234,8 @@ function isAnswerRight (event) {
       displayRandomCountry(); 
 
      } else {
-      console.log("je suis dans le else, donc il y a déjà un P")
-      p.remove();
+      console.log("reponse juste + il y a déjà un P")
+      // p.remove();
       noP = true
       p.setAttribute('class', 'rightRep')
       p.textContent= "Pays trouvé!"
@@ -248,9 +245,9 @@ function isAnswerRight (event) {
       return true;
       
     } else {
-      // (si réponse fausse)
+      //(si réponse fausse)
       if (noP) {
-      console.log('réponse fausse, donc on rentre dans le else')
+      console.log('else = réponse fausse mais pas de p, donc if (noP)')
       // p = document.createElement("p")
       p.setAttribute('class', 'wrongRep')
       p.textContent= "Faux! Cherche encore !"
@@ -259,8 +256,8 @@ function isAnswerRight (event) {
 
       return false;
     } else {
-      console.log("je suis dans le else, donc il y a déjà un P")
-      p.remove();
+      console.log("else = réponse fausse + 2éme if donc il y a déjà un p")
+      // p.remove();
       noP = true;
       p.setAttribute('class', 'wrongRep')
       p.textContent= "Faux! Cherche encore !"
@@ -271,7 +268,6 @@ function isAnswerRight (event) {
   start.addEventListener('click', displayRandomCountry);
 
   function displayRandomCountry(e) {
-    // p.remove();
     if (check) {
       randCountry = tabCountries[Math.floor(Math.random() * tabCountries.length)];
       console.log("le pays aléatoire est : " + randCountry);
