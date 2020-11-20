@@ -10,6 +10,7 @@ let tabCountries = Array(
   "Irlande",
   "Suisse",
   "Belgique",
+<<<<<<< HEAD
   // "Roumanie",
   // "Moldavie",
   // "Norvège",
@@ -44,6 +45,42 @@ let tabCountries = Array(
   // "Arménie",
   // "Géorgie",
   // "Azerbaidjan"
+=======
+  "Roumanie",
+  "Moldavie",
+  "Norvège",
+  "Suède",
+  "Finlande",
+  "Ukraine",
+  "Allemagne",
+  "Pays-bas",
+  "Danemark",
+  "Islande",
+  "Estonie",
+  "Biélorussie",
+  "Bosnie",
+  "Letonnie",
+  "Bulgarie",
+  "Lituanie",
+  "Macédoine",
+  "Turquie",
+  "Grèce",
+  "Slovaquie",
+  "Chypre",
+  "Hongrie",
+  "Pologne",
+  "Albanie",
+  "Autriche",
+  "Tchéquie",
+  "Croatie",
+  "Slovénie",
+  "Serbie",
+  "Monténégro",
+  "Kosovo",
+  "Arménie",
+  "Géorgie",
+  "Azerbaidjan"
+>>>>>>> Claire
 );
 
 let tabDescriptionCountries = Array(
@@ -57,6 +94,7 @@ let tabDescriptionCountries = Array(
   "Irlande est connu pour la saint-Patrick",
   "La Suisse est connue pour les banques et les montres",
   "La Belgique est connue pour les bières, les frites et les plantes ",
+<<<<<<< HEAD
   // "La Roumanie est connue pour ces diplomes de médecin ",
   // "La Moldavie est connue pour ses vins rouges ",
   // "La Norvège est connue pour le froid ",
@@ -91,6 +129,42 @@ let tabDescriptionCountries = Array(
   // "L'Arménie est connue pour ses sites religieux ",
   // "La Géorgie est célèbre pour le monastère troglodytique de Vardzia, du XIIe siècle, ainsi que pour l'antique région vinicole de la Kakhétie",
   // "Azerbaidjan est connue pour sa cité médiéviale intra-muros et ses fortifications" 
+=======
+  "La Roumanie est connue pour es diplomes de médecin ",
+  "La Moldavie est connue pour ses vins rouges ",
+  "La Norvège est connue pour le froid ",
+  "La Suède est connue pour ses Suédoises ",
+  "La Finlande est connue pour ses Aurores",
+  "L'Ukraine est un vaste pays d'Europe de l'Est réputé pour ses églises orthodoxes",
+  "L'Allemagne est connue pour ses bretzels.",
+  "La Pays-bas est connue pour ses moulins et sa capitale Amsterdam",
+  "La Danemark est connue pour ses batiment de couleurs",
+  "L'Islande est connue pour les vikings",
+  "L'Estonie est connue pour ses selfies avec Marine",
+  "La Biélorussie est connue pour sa démocratie",
+  "La Bosnie est connue pour l'assassinat de l'archiduc François-Ferdinand, qui a provoqué la Première Guerre mondiale", 
+  "La Lettonie est connue pour son bois",
+  "La Bulgarie est connue pour la mer noir",
+  "La Lituanie est connue pour ses cathédrales",
+  "La Macédoine est connue pour la salade",
+  "La Turquie est connue pour ses kebab",
+  "La Grèce est connue pour ses yaourts",
+  "La Slovaquie est connue pour son armée",
+  "La Chypre est connue pour ses sites archéologiques",
+  "La Hongrie est connue pour ne pas avoir d'acces à la mer",
+  "La Pologne est connue pour ses mines de sel",
+  "L'Albanie est connue pour les gens dans le coffre",
+  "L'Autriche est connue pour ses philosophes et Mozart",
+  "La Tchéquie est connue pour ses chateaux",
+  "La Croatie est connue pour l'achat des joueurs",
+  "La Slovénie est connue pour ses montagnes, ses stations de ski et ses lacs",
+  "La Serbie est connue pour sa mafia",
+  "Le Monténégro est connue pour la nature",
+  "Le Kosovo est connue pour être libéré de la Serbie",
+  "L'Arménie est connue pour ses sites religieux ",
+  "La Géorgie est célèbre pour le monastère troglodytique de Vardzia, du XIIe siècle, ainsi que pour l'antique région vinicole de la Kakhétie",
+  "Azerbaidjan est connue pour sa cité médiéviale intra-muros et ses fortifications" 
+>>>>>>> Claire
 );
 
 
@@ -123,6 +197,7 @@ function countdown() {
   }
 }
 
+<<<<<<< HEAD
 // function countdown () {
 // let compteur = 180;
                  
@@ -143,6 +218,8 @@ function countdown() {
 // }, 1000);
 // }
 
+=======
+>>>>>>> Claire
 
 let russie = document.getElementById("Russie");
 let france = document.getElementById("France");
