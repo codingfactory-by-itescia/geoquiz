@@ -82,4 +82,10 @@ function changeTopurpleMode() {
   let h2 = document.getElementById("h2");
   h2.classList.toggle("purpleh1et2");
   demo.classList.toggle("purplehalloffame");
+  let linkToGame = document.getElementById("linkToGame");
+  linkToGame.classList.toggle("Pbtn");
+  let regle = document.getElementById("regle");
+  regle.classList.toggle("Pbtn");
+  let valid = document.getElementById("valid");
+  valid.classList.toggle("Pbtn");
 }

@@ -31,4 +31,10 @@ function changeTopurpleMode() {
     let titre = document.getElementById("titre");
     console.log("je suis le titre" + titre)
     titre.classList.toggle("ph1");
+    let linkToGame = document.getElementById("linkToGame")
+    console.log("je suis linkToGame" + linkToGame)
+    linkToGame.classList.toggle("Pbtn")
+    let linkToMenu = document.getElementById("linkToMenu")
+    console.log("je suis linkToMenu" + linkToMenu)
+    linkToMenu.classList.toggle("Pbtn")
     }

@@ -63,6 +63,31 @@
       #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
       #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
   }
+  .Pbtn {
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    font-family: "Livvic", sans-serif;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: rgb(157, 205, 211);
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  .Pbtn:hover {
+    color: #ffffff;
+    background-color: rgb(157, 205, 211);
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+      #2d4cff 0px 0px 20px, #2d4cff 0px 0px 20px, #2d4cff 0px 0px 20px,
+      #2d4cff 0px 0px 20px, #2d4cff 0px 0px 20px;
+  }
   #timer {
     display: none;
     text-align: center;

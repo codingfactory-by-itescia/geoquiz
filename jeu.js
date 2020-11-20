@@ -10,42 +10,89 @@ let tabCountries = Array(
   "Irlande",
   "Suisse",
   "Belgique",
-  "Roumanie",
-  "Moldavie",
-  "Norvège",
-  "Suède",
-  "Finlande",
-  "Ukraine",
-  "Allemagne",
-  "Pays-bas",
-  "Danemark",
-  "Islande",
-  "Estonie",
-  "Biélorussie",
-  "Bosnie",
-  "Letonnie",
-  "Bulgarie",
-  "Lituanie",
-  "Macédoine",
-  "Turquie",
-  "Grèce",
-  "Slovaquie",
-  "Chypre",
-  "Hongrie",
-  "Pologne",
-  "Albanie",
-  "Autriche",
-  "Tchéquie",
-  "Croatie",
-  "Slovénie",
-  "Serbie",
-  "Monténégro",
-  "Kosovo",
-  "Moldavie",
-  "Arménie",
-  "Géorgie",
-  "Azerbaidjan"
+  // "Roumanie",
+  // "Moldavie",
+  // "Norvège",
+  // "Suède",
+  // "Finlande",
+  // "Ukraine",
+  // "Allemagne",
+  // "Pays-bas",
+  // "Danemark",
+  // "Islande",
+  // "Estonie",
+  // "Biélorussie",
+  // "Bosnie",
+  // "Letonnie",
+  // "Bulgarie",
+  // "Lituanie",
+  // "Macédoine",
+  // "Turquie",
+  // "Grèce",
+  // "Slovaquie",
+  // "Chypre",
+  // "Hongrie",
+  // "Pologne",
+  // "Albanie",
+  // "Autriche",
+  // "Tchéquie",
+  // "Croatie",
+  // "Slovénie",
+  // "Serbie",
+  // "Monténégro",
+  // "Kosovo",
+  // "Arménie",
+  // "Géorgie",
+  // "Azerbaidjan"
 );
+
+let tabDescriptionCountries = Array(
+  "L'Italie a acquis une renomée mondiale pour sa gastronomie.",
+  "Il fait très froid en Russie et mieux vaut ne pas en dire du mal.",
+  "En France, on est les champions du monde !!!",
+  "Le Luxembourg est connu pour être petit ",
+  "L'Espagne est connu pour ses coridas",
+  "Le Portugal est connu pour son excellent coach agile Mr André De Sousa",
+  "Le Royaume-Uni est connu pour le Brexit",
+  "Irlande est connu pour la saint-Patrick",
+  "La Suisse est connue pour les banques et les montres",
+  "La Belgique est connue pour les bières, les frites et les plantes ",
+  // "La Roumanie est connue pour ces diplomes de médecin ",
+  // "La Moldavie est connue pour ses vins rouges ",
+  // "La Norvège est connue pour le froid ",
+  // "La Suède est connue pour ces Suédoises ",
+  // "La Finlande est connue pour ces Aurores",
+  // "L'Ukraine est un vaste pays d'Europe de l'Est réputé pour ses églises orthodoxes",
+  // "L'Allemagne est connue pour ses bretzels.",
+  // "La Pays-bas est connue pour ces moulins et sa capitale Amsterdam",
+  // "La Danemark est connue pour ces batiment de couleurs",
+  // "L'Islande est connue pour les vikings",
+  // "L'Estonie est connue pour ces selfies avec Marine",
+  // "La Biélorussie est connue pour sa démocratie",
+  // "La Bosnie est connue pour l'assassinat de l'archiduc François-Ferdinand, qui a provoqué la Première Guerre mondiale", 
+  // "La Letonnie est connue pour son bois",
+  // "La Bulgarie est connue pour la mer noir",
+  // "La Lituanie est connue pour ces cathédrales",
+  // "La Macédoine est connue pour la salade",
+  // "La Turquie est connue pour ces kebab",
+  // "La Grèce est connue pour ces yaourts",
+  // "La Slovaquie est connue pour son armée",
+  // "La Chypre est connue ces sites archéologiques",
+  // "La Hongrie est connue pour ne pas avoir d'acces à la mer",
+  // "La Pologne est connue pour ces mines de sel",
+  // "L'Albanie est connue pour les gens dans le coffre",
+  // "L'Autriche est connue pour ces philosophes et Mozart",
+  // "La Tchéquie est connue pour ces chateaux",
+  // "La Croatie est connue pour l'achat des joueurs",
+  // "La Slovénie est connue pour ses montagnes, ses stations de ski et ses lacs",
+  // "La Serbie est connue pour sa mafia",
+  // "Le Monténégro est connue pour la nature",
+  // "Le Kosovo est connue pour être libéré de la Serbie",
+  // "L'Arménie est connue pour ses sites religieux ",
+  // "La Géorgie est célèbre pour le monastère troglodytique de Vardzia, du XIIe siècle, ainsi que pour l'antique région vinicole de la Kakhétie",
+  // "Azerbaidjan est connue pour sa cité médiéviale intra-muros et ses fortifications" 
+);
+
 
 let divBtnAndCountry = document.getElementById("divBtnAndCountry");
 let h3 = document.getElementsByTagName("h3")[0]
@@ -190,6 +237,7 @@ azerbaidjan.addEventListener("click", isAnswerRight)
 
 let check = true;
 let noP = true ;
+let noPdescription = true
 let randCountry;
 let score = 0;
 
@@ -204,70 +252,152 @@ pbody.classList.toggle("pBody");
 let titre = document.getElementById("titre");
 console.log("je suis le titre" + titre)
 titre.classList.toggle("ph1");
+let start = document.getElementById("start");
+console.log("je suis start" + start)
+start.classList.toggle("Pbtn")
 }
 
 let divRightOrWrongAnswer = document.getElementById("rightOrWrongAnswer")
 // window.addEventListener("click", isAnswerRight)
-let p = document.createElement("p")
+let p = document.createElement("p");
+let pdescription = document.createElement("p");
 // let p2 = document.createElement("p")
+let index;
+let countriesDescription = document.getElementById("countriesDescription")
 
 function isAnswerRight (event) {
-    event.preventDefault();
-    console.log('je suis dans la fonction isAnswerRight')
-    let idOfClickedElemt = event.srcElement.id;
-    console.log(idOfClickedElemt)
-    if (idOfClickedElemt == randCountry) {
-      score=score+5;
-      console.log(score);
-      console.log('réponse correcte, le score est égal à : '+score)
-      localStorage.setItem('score', score)
-      
-     // Création d'un élément p et attribution d'une classe à cet élément
-     // et je lui donne un contenu de texte
-     // Je greffe ce paragraphe à ma div
-     if (noP) {
-       console.log("réponse juste + je suis dans le if noP")
-      p.setAttribute('class', 'rightRep')
-      p.textContent= "Pays trouvé!"
-      divRightOrWrongAnswer.appendChild(p);
-      noP = false
-      displayRandomCountry(); 
-
-     } else {
-      console.log("reponse juste + il y a déjà un P")
-      // p.remove();
-      noP = true
-      p.setAttribute('class', 'rightRep')
-      p.textContent= "Pays trouvé!"
-      divRightOrWrongAnswer.appendChild(p);
-      displayRandomCountry();
-     }
-      return true;
-      
-    } else {
-      //(si réponse fausse)
-      if (noP) {
-      console.log('else = réponse fausse mais pas de p, donc if (noP)')
-      // p = document.createElement("p")
-      p.setAttribute('class', 'wrongRep')
-      p.textContent= "Faux! Cherche encore !"
-      divRightOrWrongAnswer.appendChild(p)
-      noP = false;
-
-      return false;
-    } else {
-      console.log("else = réponse fausse + 2éme if donc il y a déjà un p")
-      // p.remove();
-      noP = true;
-      p.setAttribute('class', 'wrongRep')
-      p.textContent= "Faux! Cherche encore !"
-      divRightOrWrongAnswer.appendChild(p);
+  event.preventDefault();
+  console.log('je suis dans la fonction isAnswerRight')
+  let idOfClickedElemt = event.srcElement.id;
+  console.log(idOfClickedElemt)
+  if (idOfClickedElemt == randCountry) {
+    score=score+5;
+    console.log(score);
+    console.log('réponse correcte, le score est égal à : '+score)
+    localStorage.setItem('score', score)
+    for(index = 0; index < tabDescriptionCountries.length; index++) {
+      if (idOfClickedElemt === tabCountries[index]) { 
+         console.log ('yes Alpha, ta boucle est bonne!')
+         console.log(tabDescriptionCountries[index])  
+           if (noPdescription) {
+            console.log("réponse juste + je suis dans le if noPDescription")
+            pdescription.textContent= tabDescriptionCountries[index]
+            countriesDescription.appendChild(pdescription);
+            noPdescription = false
+            displayRandomCountry();
+          }    else {
+            pdescription.remove();
+            noPdescription = true
+            pdescription.textContent= tabDescriptionCountries[index]
+    countriesDescription.appendChild(pdescription);
+    noPdescription = false;
+    displayRandomCountry();
+          }
+        }
     }
+   // Création d'un élément p et attribution d'une classe à cet élément
+   // et je lui donne un contenu de texte
+   // Je greffe ce paragraphe à ma div
+   if (noP) {
+     console.log("réponse juste + je suis dans le if noP")
+    p.setAttribute('class', 'rightRep')
+    p.textContent= "Bravo, bonne réponse !"
+    divRightOrWrongAnswer.appendChild(p);
+    noP = false
+    // displayRandomCountry(); 
+
+   } else {
+    console.log("reponse juste + il y a déjà un P")
+    // p.remove();
+    noP = true
+    p.setAttribute('class', 'rightRep')
+    p.textContent= "Bravo, bonne réponse !"
+    divRightOrWrongAnswer.appendChild(p);
+    // displayRandomCountry();
+   }
+    return true;
+    
+  } else {
+    pdescription.remove()
+    //(si réponse fausse)
+    if (noP) {
+    console.log('else = réponse fausse mais pas de p, donc if (noP)')
+    // p = document.createElement("p")
+    p.setAttribute('class', 'wrongRep')
+    p.textContent= "Faux! Cherche encore !"
+    divRightOrWrongAnswer.appendChild(p)
+    noP = false;
+
+    return false;
+  } else {
+    console.log("else = réponse fausse + 2éme if donc il y a déjà un p")
+    // p.remove();
+    noP = true;
+    p.setAttribute('class', 'wrongRep')
+    p.textContent= "Faux! Cherche encore !"
+    divRightOrWrongAnswer.appendChild(p);
   }
 }
+}
+
+// function isAnswerRight (event) {
+//     event.preventDefault();
+//     console.log('je suis dans la fonction isAnswerRight')
+//     let idOfClickedElemt = event.srcElement.id;
+//     console.log(idOfClickedElemt)
+//     if (idOfClickedElemt == randCountry) {
+//       score=score+5;
+//       console.log(score);
+//       console.log('réponse correcte, le score est égal à : '+score)
+//       localStorage.setItem('score', score)
+      
+//      // Création d'un élément p et attribution d'une classe à cet élément
+//      // et je lui donne un contenu de texte
+//      // Je greffe ce paragraphe à ma div
+//      if (noP) {
+//        console.log("réponse juste + je suis dans le if noP")
+//       p.setAttribute('class', 'rightRep')
+//       p.textContent= "Bravo, bonne réponse !"
+//       divRightOrWrongAnswer.appendChild(p);
+//       noP = false
+//       displayRandomCountry(); 
+
+//      } else {
+//       console.log("reponse juste + il y a déjà un P")
+//       // p.remove();
+//       noP = true
+//       p.setAttribute('class', 'rightRep')
+//       p.textContent= "Bravo, bonne réponse !"
+//       divRightOrWrongAnswer.appendChild(p);
+//       displayRandomCountry();
+//      }
+//       return true;
+      
+//     } else {
+//       //(si réponse fausse)
+//       if (noP) {
+//       console.log('else = réponse fausse mais pas de p, donc if (noP)')
+//       // p = document.createElement("p")
+//       p.setAttribute('class', 'wrongRep')
+//       p.textContent= "Faux! Cherche encore !"
+//       divRightOrWrongAnswer.appendChild(p)
+//       noP = false;
+
+//       return false;
+//     } else {
+//       console.log("else = réponse fausse + 2éme if donc il y a déjà un p")
+//       // p.remove();
+//       noP = true;
+//       p.setAttribute('class', 'wrongRep')
+//       p.textContent= "Faux! Cherche encore !"
+//       divRightOrWrongAnswer.appendChild(p);
+//     }
+//   }
+// }
   start.addEventListener('click', displayRandomCountry);
 
   function displayRandomCountry(e) {
+    
     if (check) {
       randCountry = tabCountries[Math.floor(Math.random() * tabCountries.length)];
       console.log("le pays aléatoire est : " + randCountry);
