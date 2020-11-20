@@ -63,6 +63,7 @@ function redirectToGamePage(e) {
   //   console.log("normalement là il se passe l'alerte")
   //   alert('veuillez indiquer votre pseudo')
   // }
+  
   //fonction de redirection
   if (inputValue == undefined) {
     alert("Veuillez indiquer votre pseudo.");
